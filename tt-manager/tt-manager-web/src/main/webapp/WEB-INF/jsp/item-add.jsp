@@ -151,7 +151,13 @@
 		}
 	});
 	//初始化富文本编辑器
-	var ue = UE.getEditor('container');
+	//get请求
+	//可以初始化修改ueditor.config.js的属性
+	var ue = UE.getEditor('container',{
+		initialFrameWidth: '100%',
+		initialFrameHeight: '300',
+		serverUrl: 'file/upload'
+	});
 
 	//表单提交动作
 	function submitForm() {

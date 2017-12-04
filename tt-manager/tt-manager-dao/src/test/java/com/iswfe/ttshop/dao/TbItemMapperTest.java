@@ -10,22 +10,22 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:spring/spring-dao-test.xml"})
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration({"classpath:spring/spring-dao-test.xml"})
 public class TbItemMapperTest {
 
 	@Autowired
 	private TbItemMapper itemDao;
 
-	@Test
-	public void selectByExample() throws Exception {
-		TbItemExample itemExample = new TbItemExample();
-		TbItemExample.Criteria criteria = itemExample.createCriteria();
-
-		criteria.andSellPointLike("%清仓%");
-
-		List<TbItem> tbItems = itemDao.selectByExample(itemExample);
-		System.out.println(tbItems);
-	}
+//	@Test
+//	public void selectByExample() throws Exception {
+//		TbItemExample itemExample = new TbItemExample();
+//		TbItemExample.Criteria criteria = itemExample.createCriteria();
+//
+//		criteria.andSellPointLike("%清仓%");
+//
+//		List<TbItem> tbItems = itemDao.selectByExample(itemExample);
+//		System.out.println(tbItems);
+//	}
 
 }
